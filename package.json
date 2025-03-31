@@ -1,0 +1,28 @@
+{
+  "name": "rollup-plugin-preserve-css",
+  "version": "0.0.1-alpha.1",
+  "description": "a rollup plugin to process css. It will preserve the import statement of css and css files in the output bundle when preserveModule is true",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "rollup",
+    "css"
+  ],
+  "author": "miku03090831",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.38.0"
+  },
+  "dependencies": {
+    "estree-walker": "^3.0.3"
+  }
+}
